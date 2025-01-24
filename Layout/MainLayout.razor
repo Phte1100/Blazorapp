@@ -7,8 +7,8 @@
 <header>
     <nav>
         <div class="topnav" id="myTopnav">
-            <a class="active" asp-area="" asp-page="/Index">Razor</a>
-            <a id="headerdate">Dagens datum är: @date</a>
+            <NavLink href="/" Match="NavLinkMatch.All" class="active">Blazor</NavLink>
+            <p id="headerdate">Dagens datum är: @date</p>
         </div>
     </nav>
 </header>
@@ -25,9 +25,9 @@
 
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2025 - Razor - <a asp-area="" asp-page="/Privacy">Privacy</a>
-        </div>
+    <footer>
+        <div class="footerdiv">
+           <p>Av Philip Telberg (phte1100) - Kontakta mig via e-post: <a href="mailto:phte1100@student.miun.se">phte1100@student.miun.se</a></p>
+           </div>
     </footer>
 
