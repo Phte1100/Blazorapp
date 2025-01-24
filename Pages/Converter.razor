@@ -1,36 +1,71 @@
 @page "/converter"
 
 <div>
-    <label for="celsiusInput">Celsius:</label>
-    <input type="number" id="celsiusInput" @bind="celsius" @oninput="ConvertToFahrenheit" />
-    <p>Fahrenheit: @fahrenheit</p>
+    <p><strong>Km/h</strong> till <strong>Miles/h</strong></p>
+    <label for="kmhInput">Km/h:</label>
+    <input type="number" id="kmhInput" @bind="kmhInput" />
+    <button @onclick="ConvertToMiles">Konvertera</button>
+    <p>Miles/hour: @milesOutput</p>
 </div>
 
 <div>
-    <label for="fahrenheitInput">Fahrenheit:</label>
-    <input type="number" id="fahrenheitInput" @bind="fahrenheit" @oninput="ConvertToCelsius" />
-    <p>Celsius: @celsius</p>
+    <p><strong>Miles/h</strong> till <strong>Km/h</strong></p>
+    <label for="milesInput">Miles/hour:</label>
+    <input type="number" id="milesInput" @bind="milesInput" />
+    <button @onclick="ConvertToKmh">Konvertera</button>
+    <p>Km/h: @kmhOutput</p>
+</div>
+
+<div>
+    <p><strong>Meter</strong> till <strong>Fot (Feet)</strong></p>
+    <label for="meterInput">Meter:</label>
+    <input type="number" id="meterInput" @bind="meterInput" />
+    <button @onclick="ConvertToFeet">Konvertera</button>
+    <p>Feet: @feetOutput</p>
+</div>
+
+<div>
+    <p><strong>Fot (Feet)</strong> till <strong>Meter</strong></p>
+    <label for="feetInput">Feet:</label>
+    <input type="number" id="feetInput" @bind="feetInput" />
+    <button @onclick="ConvertToMeters">Konvertera</button>
+    <p>Meter: @meterOutput</p>
 </div>
 
 @code {
-    private double celsius;
-    private double fahrenheit;
+    // Km/h till Miles/hour
+    private double kmhInput;
+    private int milesOutput;
 
-    private void ConvertToFahrenheit(ChangeEventArgs e)
+    private void ConvertToMiles()
     {
-        if (double.TryParse(e.Value.ToString(), out double value))
-        {
-            celsius = value;
-            fahrenheit = Math.Round((celsius * 9 / 5) + 32, 2);
-        }
+        milesOutput = (int)Math.Round(kmhInput * 0.621371);
     }
 
-    private void ConvertToCelsius(ChangeEventArgs e)
+    // Miles/hour till Km/h
+    private double milesInput;
+    private int kmhOutput;
+
+    private void ConvertToKmh()
     {
-        if (double.TryParse(e.Value.ToString(), out double value))
-        {
-            fahrenheit = value;
-            celsius = Math.Round((fahrenheit - 32) * 5 / 9, 2);
-        }
+        kmhOutput = (int)Math.Round(milesInput / 0.621371);
+    }
+
+    // Meter till Feet
+    private double meterInput;
+    private double feetOutput;
+
+    private void ConvertToFeet()
+    {
+        feetOutput = Math.Round(meterInput * 3.28084, 2);
+    }
+
+    // Feet till Meter
+    private double feetInput;
+    private double meterOutput;
+
+    private void ConvertToMeters()
+    {
+        meterOutput = Math.Round(feetInput / 3.28084, 2);
     }
 }

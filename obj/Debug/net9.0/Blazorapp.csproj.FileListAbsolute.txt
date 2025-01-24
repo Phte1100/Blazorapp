@@ -1025,10 +1025,10 @@ G:\.NET\Blazor\Blazorapp\obj\Debug\net9.0\Blazorapp.pdb
 G:\.NET\Blazor\Blazorapp\obj\Debug\net9.0\ref\Blazorapp.dll
 G:\.NET\Blazor\Blazorapp\obj\Debug\net9.0\compressed\lg9se3et9l-f0u1040tkm.gz
 G:\.NET\Blazor\Blazorapp\obj\Debug\net9.0\compressed\rsmmsu1p7c-3x458im1g3.gz
-G:\.NET\Blazor\Blazorapp\bin\Debug\net9.0\wwwroot\_framework\Blazorapp.h5bbvi331c.pdb
-G:\.NET\Blazor\Blazorapp\bin\Debug\net9.0\wwwroot\_framework\Blazorapp.dh4ijcsn1z.wasm
-G:\.NET\Blazor\Blazorapp\bin\Debug\net9.0\wwwroot\_framework\Blazorapp.dh4ijcsn1z.wasm.gz
-G:\.NET\Blazor\Blazorapp\bin\Debug\net9.0\wwwroot\_framework\Blazorapp.h5bbvi331c.pdb.gz
-G:\.NET\Blazor\Blazorapp\obj\Debug\net9.0\compressed\c1cygtyohb-dh4ijcsn1z.gz
-G:\.NET\Blazor\Blazorapp\obj\Debug\net9.0\compressed\xab44cd8zi-h5bbvi331c.gz
-G:\.NET\Blazor\Blazorapp\obj\Debug\net9.0\compressed\ttefwgxaow-xt1p4paevv.gz
+G:\.NET\Blazor\Blazorapp\bin\Debug\net9.0\wwwroot\_framework\Blazorapp.e612q2ew94.pdb
+G:\.NET\Blazor\Blazorapp\bin\Debug\net9.0\wwwroot\_framework\Blazorapp.71a7a2ml3p.wasm
+G:\.NET\Blazor\Blazorapp\bin\Debug\net9.0\wwwroot\_framework\Blazorapp.71a7a2ml3p.wasm.gz
+G:\.NET\Blazor\Blazorapp\bin\Debug\net9.0\wwwroot\_framework\Blazorapp.e612q2ew94.pdb.gz
+G:\.NET\Blazor\Blazorapp\obj\Debug\net9.0\compressed\c1cygtyohb-71a7a2ml3p.gz
+G:\.NET\Blazor\Blazorapp\obj\Debug\net9.0\compressed\xab44cd8zi-e612q2ew94.gz
+G:\.NET\Blazor\Blazorapp\obj\Debug\net9.0\compressed\ttefwgxaow-64brxlqegj.gz
