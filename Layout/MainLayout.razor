@@ -1,0 +1,33 @@
+﻿@inherits LayoutComponentBase
+
+@code {
+    private string date = DateTime.Now.ToString("yyyy-MM-dd");
+}
+
+<header>
+    <nav>
+        <div class="topnav" id="myTopnav">
+            <a class="active" asp-area="" asp-page="/Index">Razor</a>
+            <a id="headerdate">Dagens datum är: @date</a>
+        </div>
+    </nav>
+</header>
+
+    <div class="layout">
+<div class="sidebar">
+    <NavMenu />
+</div>
+            <div class="content">
+                <main role="main" class="pb-3">
+                    @Body
+                </main>
+            </div>
+
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2025 - Razor - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>
+
